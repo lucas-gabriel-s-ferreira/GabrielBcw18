@@ -1,0 +1,19 @@
+body{
+    font-family: roboto;
+}
+.fundobase{
+    background-color: aliceblue;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    margin-top: 80px;
+    border-radius: 20px;
+}
+
+#navegador{
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+     padding: 15px;
+}

@@ -13,67 +13,122 @@
   <script src="./js/action.js"></script>
 </head>
 
-<body style="font-family: 'Roboto', sans-serif">
-  <header >
+<body>
+    <header>
+        <nav id="navegador">
+            <a href="#cadastro">Cadastro <strong>BCW18</strong></a> |
+            <a href="#cronograma">Cronograma do <strong>BCW18</strong>.</a> |
+            <a href="#dicas">Dicas do team <strong>BCW18</strong>.</a> |
+            <a href="#trabalho">Orientações de Trabalho como Dev.</a>
+        </nav>
+    </header>
+    <main>
+        <div  class="fundobase">
+            <h1>Trajetória de Sucesso</h1>
+            <table>
+                <tr>
+                    <th> <strong>FASE</strong> </th>
+                    <th> <strong>Descrição</strong> </th>
+                    <th> <strong>Imagem</strong> </th>
+                </tr>
+                <tr>
+                    <td>Primeira</td>
+                    <td>
+                        Inscrição no site oficial, execução do teste de lógica,
+                        curso da trilha zero e montagem do Pitch.
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="./img/img3.jpg" alt="Ato de inscrição na SoulCode" width="180px" height="180px">
+                            <figcaption>Fig.1 - Ato de inscrição na SoulCode</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Segunda</td>
+                    <td>
+                        Testes trilha zero e entrevista com recrutador para avaliação de bolsa,
+                        nesta fase se analisa a elegibilidade para a bolsa de estudos
+                        perante os clientes e o candidato.
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="./img/img2.jpg" alt="Testes de Lógica para seleção" width="180px" height="180px">
+                            <figcaption>Fig.2 - Testes de Lógica para seleção</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Terceira</td>
+                    <td>
+                        Dinâmica em grupo com a realização de teste on-line e
+                        convocação dos alunos aprovados.
+                    </td>
+                    <td>
+                        <figure>
+                            <img src="./img/img1.jpg" alt="Aprovação e convocação." width="180px" height="180px">
+                            <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="fundobase" > 
+            <form action="#" id="cadastro">
+                <div>
+                    <input type="hidden" name="" id="id-user">
+                </div>
+                <div><label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome">
+                </div>
 
-    <nav>
-      <a href="#somos">Quem somos neste <strong>BCW18</strong></a>
-      <a href="#cronograma">Cronograma do <strong>BCW18</strong> </a>
-      <a href="#dicas">Dicas do team <strong>BCW18</strong></a>
-      <a href="#orientacoes">Orientações de trabalho como dev</a>
-    </nav>
+                <div><label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="Digite seu email">
+                </div>
 
-  </header>
+                <div><label for="nascimento">Data de nascimento: </label>
+                    <input type="date" id="nascimento">
+                </div>
 
-  <main>
+                <div><input type="checkbox" id="deficiencia">
+                    <label for="deficiencia">Deficiencia: </label>
+                </div>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="" id="senha" placeholder="Entre com a senha">
+                </div>
+                <br>
+                <div><label for="escolaridade">Nivel Escolar: </label>
+                   <br> <input type="radio" name="escolaridade" id="escolaridade" value="F1"> Fundamental <br>
+                   <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Bruna <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Medio <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="B1"> Bacharel <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="T1"> Tecnologo <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="L1"> Licenciado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="P2"> Pós graduado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="P2"> Mestrado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="P3"> Doutorado 
+                </div>
+                <br>
+                <div>
+                    <label for="experiencia">Qual a sua experiencia com programação?</label>
+                    <input type="range" name="" id="experiencia">
+                </div>
+                <br>
+                <div>
+                    <label for="descricao">Descrição da experiencia: </label> <br>
+                    <textarea id="descricao" cols="10" rows="10" placeholder="Descreva suas experiencias" style="width: 450px"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" >
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
 
-    <div style="width: 650px">
-      <h1>Trajetória de Sucesso</h1>
-      <table>
-        <tr>
-          <th> <strong>FASE</strong> </th>
-          <th>Descrição</th>
-          <th>Imagem</th>
-        </tr>
-
-        <tr>
-          <td>Primeira</td>
-          <td>Inscrição, execução para o teste de lógica,
-            curso da trilha zero e montagem de Pitch.</td>
-            <td><figure>
-            <img src="./img/img2.jpg" alt="Ato de inscrição" width="180px" height="180px">
-              <figcaption>Fig.1 - Ato de inscrição </figcaption>
-            </figure></td>
-            
-          
-        </tr>
-
-        <tr>
-          <td>Segunda</td>
-          <td>Testes trilha zero e entrevista com recrutador para avaliação de bolsa,
-            nesta fase se analisa a elegibilidade para a bolsa de estudos perante os
-             clientes e os candidatos.</td>
-             <td><figure>
-              <img src="./img/img3.jpg" alt="Ato de inscrição" width="180px" height="180px">
-              <figcaption>Fig.2 - Testes de lógica para seleção </figcaption>
-            </figure></td>
-              
-            
-        </tr>
-        <tr>
-          <td>Terceira</td>
-          <td>Teste de dinamica feita em grupo para avaliar o trabalho em grupo e
-             raciocinio logico.</td>
-             <td><figure>
-              <img src="./img/img1.jpg" alt="Ato de inscrição" width="180px" height="180px">
-              <figcaption>Fig.3 - Aprovação e convocação </figcaption>
-            </figure></td>
-              
-        </tr>
-      </table>
-  </main>
-
-  <footer></footer>
+    </footer>
 </body>
 
 </html>
